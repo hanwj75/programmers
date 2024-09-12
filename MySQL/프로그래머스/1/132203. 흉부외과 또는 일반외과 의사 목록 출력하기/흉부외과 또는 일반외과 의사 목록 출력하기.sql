@@ -1,0 +1,4 @@
+SELECT DR_NAME,DR_ID,MCDP_CD, substring(HIRE_YMD,1,10)
+from DOCTOR
+where MCDP_CD in('cs','gs')
+ORDER BY HIRE_YMD DESC, DR_NAME ASC
