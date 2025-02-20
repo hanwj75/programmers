@@ -1,8 +1,10 @@
 function solution(s) {
-    // 문자열 길이가 4 또는 6인지 확인
-    if (s.length === 4 || s.length === 6) {
-        // 문자열이 숫자로만 구성되어 있는지 확인
-        return /^\d+$/.test(s);
+    
+    if(/^\d+$/.test(s)&&(s.length===4 ||s.length===6)){
+        return true
+    }else{
+        return false
     }
-    return false;
 }
+
+// 문자열이 숫자0~9까지의 값인지 구분하는 정규 표현식: /^\d+$/
