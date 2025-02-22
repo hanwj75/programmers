@@ -1,10 +1,8 @@
 function solution(n) {
- let x = Math.floor(Math.sqrt(n))//제곱근 구하는 메서드
- 
-if(x*x === n){
-    return (x+1)*(x+1)
-}else {
-    return -1
-}
-
+for(let i = 1 ;i<=n;i++){
+    if(i*i === n){
+      return (i+1)*(i+1)
+   
+    }
+}return -1
 }
