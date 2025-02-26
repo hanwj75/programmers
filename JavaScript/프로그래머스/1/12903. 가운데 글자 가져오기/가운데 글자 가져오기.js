@@ -14,5 +14,3 @@ function solution(s) {
 }
 
 
-
-    //1이라면 s.length를 2로 나눈값의 -0.5 에서 +0.5 까지의 글자를 반환함
