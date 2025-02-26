@@ -1,13 +1,13 @@
 function solution(n) {
-    let str = []
-    
-  for(let i = 0 ; i<n;i++){
-      if(i%2===0){
-          str.push('수')
-         
+  let button = false
+  let arr = []
+  for(let i = 0 ; i < n ; i++){
+      if(button === false){
+         arr.push("수")
+          button = true
       }else{
-          str.push('박')
+          arr.push("박")
+          button = false
       }
-  }return str.join('')
- 
+  }return arr.join('')
 }
