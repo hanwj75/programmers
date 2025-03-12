@@ -1,7 +1,5 @@
 function solution(n) {
-   let threeN =n.toString(3)
- let reversN = Array.from(threeN).slice('').reverse().join('')
-let result = parseInt(reversN,3)
-
-return result
+let ternary = n.toString(3).split('').reverse().join('')
+let decimal = parseInt(ternary, 3);
+return decimal
 }
