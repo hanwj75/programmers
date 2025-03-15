@@ -1,15 +1,15 @@
 function solution(number) {
     let count = 0
-    let n =number.length
- for(let i = 0; i<n;i++){
-     for(let j = i+1 ; j<n;j++){
-         for(let z =j+1 ; z<n;z++){
-             if(number[i]+number[j]+number[z] === 0){
-                 count++
-                
-             }
-         }
-     }
-         
-     }return count
- }
+    let length = number.length
+for(let i = 0;i<length;i++){
+    for(let j = i+1;j<length;j++){
+        for(let x = j+1;x<length;x++){
+            const indexJ = j%length
+            const indexX = x%length
+           if(number[i]+number[indexJ]+number[indexX] === 0){
+                count++
+           } 
+        }
+    }
+}return count
+}
