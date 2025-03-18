@@ -1,20 +1,13 @@
 function solution(sizes) {
-       let left = []
-      let right = []
-  for(let i = 0 ; i < sizes.length;i++){
-   let [w,h] = sizes[i]
-            if(w<h){
-                left.push(h)
-                right.push(w)
-          
-            }else{
-                left.push(w)
-                right.push(h)
-           }
-            
-                  
-          }return Math.max(...left)*Math.max(...right) 
-          
- 
+ let w = []
+ let h = []
+ for(let i = 0 ; i<sizes.length;i++){
+     if(sizes[i][0]>sizes[i][1]){
+         w.push(sizes[i][0])
+         h.push(sizes[i][1])
+     }else{
+         h.push(sizes[i][0])
+         w.push(sizes[i][1])
+     }
+ }return Math.max(...w)*Math.max(...h)
 }
-
