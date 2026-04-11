@@ -10,6 +10,4 @@ function solution(n) {
     }
     return Math.ceil(totalPizza/onePizza)
 }
-//피자 한판당7명이 먹을수있음
-//한명도 한판이 필요함
-//7명이 넘어가는 순간 2판이 필요해짐
+
