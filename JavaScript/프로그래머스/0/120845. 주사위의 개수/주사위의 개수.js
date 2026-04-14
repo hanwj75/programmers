@@ -1,6 +1,4 @@
 function solution(box, n) {
-
-   
     let box1 =Math.trunc(box[0]/n)
     let box2 =Math.trunc(box[1]/n)
     let box3 =Math.trunc(box[2]/n)
