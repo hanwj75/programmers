@@ -18,5 +18,3 @@ function solution(array) {
     return isBoolean ? -1:res
 }
 
-//max = 배열에서 구한 최빈값의 개수
-//res = 최빈값
